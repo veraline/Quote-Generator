@@ -17,7 +17,7 @@ body{
 
 .container{
     width: 550px;
-    height: 450px;
+    height: 300px;
 }
 .header{
     font-size: 1.2rem;
@@ -62,4 +62,62 @@ border-radius: 5px;
 
 .new-quote:active{
     background-color: lightblue;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 500px;
+        height: 400px;
+    }
+
+    .header {
+        font-size: 1.2rem;
+    }
+
+    .main-content {
+        padding: 20px 15px;
+    }
+
+    .main-content .text-area {
+        font-size: 1.2rem;
+    }
+
+    .main-content .person {
+        font-size: 1.3rem;
+    }
+
+    .new-quote {
+        font-size: 1.1rem;
+        padding: 8px 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 70%;
+        height: auto;
+    }
+
+    .header {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .main-content {
+        padding: 15px 10px;
+    }
+
+    .main-content .text-area {
+        font-size: 1rem;
+    }
+
+    .main-content .person {
+        font-size: 1.1rem;
+    }
+
+    .new-quote {
+        font-size: 1rem;
+        padding: 6px 10px;
+    }
 }
